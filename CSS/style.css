@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #050505;
+    color: #00ff33;
+    font-family: 'Share Tech Mono', monospace;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.conteiner {
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border: 2px solid #00ff33;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0, 255, 51, 0.2);
+    background-color: #0a0a0a;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px dashed #00ff33;
+    padding-bottom: 15px;
+    text-shadow: 0 0 8px rgba(0, 255, 51, 0.6);
+}
+
+.informacion {
+    background-color: #001102;
+    border-left: 4px solid #00ff33;
+    padding: 15px;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.interface-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.form1, .form2 {
+    flex: 1;
+    min-width: 280px;
+    border: 1px solid #00aa22;
+    padding: 20px;
+    background-color: #020c02;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+h3 {
+    text-transform: uppercase;
+    color: #88ff99;
+    border-bottom: 1px solid #00aa22;
+    padding-bottom: 5px;
+}
+
+input {
+    background-color: #000;
+    border: 1px solid #00ff33;
+    color: #00ff33;
+    padding: 10px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1rem;
+    outline: none;
+}
+
+input:focus {
+    box-shadow: 0 0 8px rgba(0, 255, 51, 0.5);
+}
+
+button {
+    background-color: #00ff33;
+    color: #000;
+    border: none;
+    padding: 12px;
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #000;
+    color: #00ff33;
+    border: 1px solid #00ff33;
+    box-shadow: 0 0 10px rgba(0, 255, 51, 0.4);
+}
+
+.resultado {
+    min-height: 40px;
+    padding: 10px;
+    background-color: #000;
+    border: 1px dashed #00aa22;
+    word-break: break-all;
+}
+
+.imagenes-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.img img, .img1 img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #00ff33;
+    filter: grayscale(100%) brightness(80%) sepia(100%) hue-rotate(70deg);
+}
